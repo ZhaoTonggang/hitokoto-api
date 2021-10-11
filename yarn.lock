@@ -6532,7 +6532,7 @@ fsevents@^2.3.2:
     mysql2: 2.3.0
     nconf: 0.11.3
     nconf-yaml: 1.0.2
-    nodemailer: 6.6.3
+    nodemailer: 6.7.0
     nyc: 15.1.0
     passthrough-counter: 1.0.0
     pify: 5.0.0
@@ -9496,10 +9496,10 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"nodemailer@npm:6.6.3":
-  version: 6.6.3
-  resolution: "nodemailer@npm:6.6.3"
-  checksum: abcdcbc80279d6200ded778765046ce64210d901953d3ec7caaaa45ae44401d8c41cf3651b6d6cfaadf945a492e815f4c8a062bdf31214bd98417a090f530830
+"nodemailer@npm:6.7.0":
+  version: 6.7.0
+  resolution: "nodemailer@npm:6.7.0"
+  checksum: 7b4aa0c20d0cf246f2c8f6a677b10e43f09e2191bf97cb8db5ea372a934cdcd9b2b9cd3bbfb1d804e2161f2d025c7347fde5387b1a176cb231ab74c73eb0c244
   languageName: node
   linkType: hard
 

@@ -6540,7 +6540,7 @@ fsevents@^2.3.2:
     regenerator-runtime: 0.13.9
     release-it: 14.11.5
     semver: 7.3.5
-    sequelize: 6.6.5
+    sequelize: 6.8.0
     supertest: 6.1.6
     supervisor: 0.12.0
     uuid: 8.3.2
@@ -11236,9 +11236,9 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"sequelize@npm:6.6.5":
-  version: 6.6.5
-  resolution: "sequelize@npm:6.6.5"
+"sequelize@npm:6.8.0":
+  version: 6.8.0
+  resolution: "sequelize@npm:6.8.0"
   dependencies:
     debug: ^4.1.1
     dottie: ^2.0.0
@@ -11266,7 +11266,7 @@ fsevents@^2.3.2:
       optional: true
     tedious:
       optional: true
-  checksum: be0a78d1a83a63613984234470eba06c6e258cd18c5fe7d84fcf465763a40eeabefb1b455e7c2b08953db42a6e0b25d2a68a84137ebe9626b46a086df62b08eb
+  checksum: dca66d01cfff0b356e9580e55927aa646ff0d7e6c2593725e7caaf9a4a9f7486f5afdd5a4651cf60fff82159d13c0a02a82145a0dfc35070e817eed5b26cef0b
   languageName: node
   linkType: hard
 

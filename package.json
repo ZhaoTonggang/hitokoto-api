@@ -4,12 +4,13 @@
   "description": "Fast & Powerful Hitokoto API Framework.",
   "main": "core.js",
   "engines": {
-    "node": ">=14"
+    "node": ">= 18"
   },
   "scripts": {
     "start": "node core",
     "dev": "yarn nodemon core.js -D",
     "pnpify": "yarn dlx @yarnpkg/pnpify",
+    "build:": "esbuild --bundle --minify --platform=node --outfile=dist/server.js core.js",
     "lint": "eslint ./src/**/*.js ./adapter/**/*.js ./test/**/*.js core.js",
     "watch": "yarn dlx supervisor --watch \".\" --extensions \"js,json\" --exec \"yarn\" -- \"start\"",
     "test": "jest --verbose",
@@ -17,7 +18,7 @@
     "release": "yarn dlx release-it",
     "changelog": "yarn dlx -p conventional-changelog-cli conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 -n .changelog.config.js",
     "prepare": "husky install",
-    "postinstall": "sh -c 'if [ command -v ./node_modules/.bin/husky ]; then ./node_modules/.bin/husky install; fi;'"
+    "postinstall": "husky install"
   },
   "repository": "https://github.com/hitokoto-osc/hitokoto-api",
   "author": "a632079 <a632079@qq.com>",
@@ -36,22 +37,23 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.8",
-    "@babel/eslint-parser": "7.22.7",
+    "@babel/eslint-parser": "7.23.3",
     "@babel/preset-env": "7.22.7",
-    "@commitlint/cli": "17.6.6",
-    "@commitlint/config-conventional": "17.6.6",
+    "@commitlint/cli": "17.8.1",
+    "@commitlint/config-conventional": "17.8.1",
     "@types/jest": "29.5.2",
     "commitizen": "4.3.0",
-    "conventional-changelog-conventionalcommits": "7.0.1",
+    "conventional-changelog-conventionalcommits": "7.0.2",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.44.0",
+    "esbuild": "^0.19.5",
+    "eslint": "8.53.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-html": "7.1.0",
-    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-import": "2.29.0",
     "eslint-plugin-jest": "27.2.2",
-    "eslint-plugin-n": "^16.0.1",
-    "eslint-plugin-prettier": "5.0.0-alpha.2",
+    "eslint-plugin-n": "16.3.1",
+    "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.3",
     "jest": "29.6.1",
@@ -59,11 +61,12 @@
     "lint-staged": "14.0.1",
     "nodemon": "3.0.1",
     "nyc": "15.1.0",
-    "prettier": "3.0.0",
+    "prettier": "3.1.0",
     "regenerator-runtime": "0.13.11",
     "release-it": "16.1.0",
     "supertest": "6.3.3",
-    "supervisor": "0.12.0"
+    "supervisor": "0.12.0",
+    "webpack": "^5.89.0"
   },
   "dependencies": {
     "@hitokoto/koa-jsonp": "3.0.7",
@@ -104,5 +107,5 @@
     "uuid": "9.0.0",
     "winston": "3.9.0"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@4.0.2"
 }

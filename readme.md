@@ -1,4 +1,12 @@
-# Hitokoto API
+<h1 align="center">Hitokoto API</h1>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/hitokoto-osc/hitokoto-api/refs/heads/master/img/logo.png" alt="Banner"/>
+</div>
+
+<p align="center">
+  <strong>用代码表达言语的魅力，用代码书写山河的壮丽。</strong>
+</p>
 
 ![alt](./img/screenshot.png)
   
@@ -104,3 +112,12 @@ $ screenfetch
                    ````` +oo+++o\:
                           `oo++.
 ```
+## Star History
+
+<a href="https://www.star-history.com/?repos=hitokoto-osc%2Fhitokoto-api&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=hitokoto-osc/hitokoto-api&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=hitokoto-osc/hitokoto-api&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=hitokoto-osc/hitokoto-api&type=date&legend=top-left" />
+ </picture>
+</a>
